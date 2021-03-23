@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Personality Test</title>
+  <link rel="stylesheet" href="./personality.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+    <script>history.scrollRestoration = "manual"</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+<header>
+<h1 id="title">Quick Personality Test</h1>
+<p id="description">What type of personality do you have? This quick scientific personality test will help you discover your primary personality traits. Your personality is important because it determines how you interact with your environment and the people around you. Understanding your personality can help you be better and happier in your life.</p>
+</header>
+
+<form class="container">
+      <div class="vragen">
+              <a href="#info" type="button" id="moreInfo" class="btn btn-sm btn-secondary active">More info...</a>
+              <!--a href="#links" type="button" id="refLinks" class="btn btn-sm btn-secondary">reference links</a-->
+            <p><strong>Please choose one option</strong> </p>
+            <p><strong>Do you... ?  Are you... ?</strong> </p>
+<hr>
+      <div class="form-group">
+          <div class="row input-group">
+              <label for="v1" class="col-1 control-label text-right">1</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="col-xs-auto btn btn-secondary btn-sm active" data-toggle="v1" data-title="e">Expend energy, enjoy groups</a>
+                <a class="col-xs-auto btn btn-secondary btn-sm notActive" data-toggle="v1" data-title="i">Conserve energy, enjoy one-on-one.</a>
+              </div>  
+              <input type="hidden" name="v1" id="v1" value="e">
+          </div>
+          <div class="row input-group">
+              <label for="v2" class="col-1 control-label text-right">2</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v2" data-title="s">Interpret literally.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v2" data-title="n">Look for meaning and possibilities.</a>
+              </div>  
+              <input type="hidden" name="v2" id="v2" value="s">
+          </div>
+          <div class="row input-group">
+              <label for="v3" class="col-1 control-label text-right">3</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v3" data-title="t">Logical, thinking, questioning.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v3" data-title="f">Empathetic, feeling, accommodating.</a>
+              </div>  
+              <input type="hidden" name="v3" id="v3" value="t">
+          </div>
+          <div class="row input-group">
+              <label for="v4" class="col-1 control-label text-right">4</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v4" data-title="j"> organized, orderly.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v4" data-title="p">flexible, adaptable.</a>
+              </div>  
+              <input type="hidden" name="v4" id="v4" value="j">
+          </div>
+          <div class="row input-group">
+              <label for="v5" class="col-1 control-label text-right">5</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v5" data-title="e"> more outgoing, think out loud.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v5" data-title="i">more reserved, think to yourself.</a>
+              </div>  
+              <input type="hidden" name="v5" id="v5" value="e">
+          </div>
+          <div class="row input-group">
+              <label for="v6" class="col-1 control-label text-right">6</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v6" data-title="s"> practical, realistic, experiential.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v6" data-title="n">imaginative, innovative, theoretical.</a>
+              </div>  
+              <input type="hidden" name="v6" id="v6" value="s">
+          </div>
+          <div class="row input-group">
+              <label for="v7" class="col-1 control-label text-right">7</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v7" data-title="t"> candid, straight forward, frank.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v7" data-title="f">tactful, kind, encouraging.</a>
+              </div>  
+              <input type="hidden" name="v7" id="v7" value="t">
+          </div>
+          <div class="row input-group">
+              <label for="v8" class="col-1 control-label text-right">8</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v8" data-title="j"> plan, schedule.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v8" data-title="p">unplanned, spontaneous.</a>
+              </div>  
+              <input type="hidden" name="v8" id="v8" value="j">
+          </div>
+          <div class="row input-group">
+              <label for="v9" class="col-1 control-label text-right">9 </label>
+              <div id="radioBtn" class="btn-group flex-wrap">              
+                <a class="btn btn-secondary btn-sm active" data-toggle="v9" data-title="e"> seek many tasks, public activities, interaction with others.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v9" data-title="i">seek private, solitary activities with quiet to concentrate.</a>
+              </div>  
+              <input type="hidden" name="v9" id="v9" value="e">
+          </div>
+          <div class="row input-group">
+              <label for="v10" class="col-1 control-label text-right">10</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v10" data-title="s"> standard, usual, conventional.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v10" data-title="n">different, novel, unique.</a>
+              </div>  
+              <input type="hidden" name="v10" id="v10" value="s">
+          </div>
+          <div class="row input-group">
+              <label for="v11" class="col-1 control-label text-right">11</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v11" data-title="t"> firm, tend to criticize, hold the line.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v11" data-title="f">gentle, tend to appreciate, conciliate.</a>
+              </div>  
+              <input type="hidden" name="v11" id="v11" value="t">
+          </div>
+          <div class="row input-group">
+              <label for="v12" class="col-1 control-label text-right">12</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v12" data-title="j">regulated, structured.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v12" data-title="p">easygoing, “live” and “let live”.</a>
+              </div>  
+              <input type="hidden" name="v12" id="v12" value="j">
+          </div>
+          <div class="row input-group">
+              <label for="v13" class="col-1 control-label text-right">13</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v13" data-title="e">external, communicative, express yourself.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v13" data-title="i">internal, reticent, keep to yourself.</a>
+              </div>  
+              <input type="hidden" name="v13" id="v13" value="e">
+          </div>
+          <div class="row input-group">
+              <label for="v14" class="col-1 control-label text-right">14</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v14" data-title="s">focus on here-and-now.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v14" data-title="n">look to the future, global perspective, “big picture”.</a>
+              </div>  
+              <input type="hidden" name="v14" id="v14" value="s">
+          </div>
+          <div class="row input-group">
+              <label for="v15" class="col-1 control-label text-right">15</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v15" data-title="t">tough-minded, just.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v15" data-title="f">tender-hearted, merciful.</a>
+              </div>  
+              <input type="hidden" name="v15" id="v15" value="t">
+          </div>
+          <div class="row input-group">
+              <label for="v16" class="col-1 control-label text-right">16</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v16" data-title="j">preparation, plan ahead.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v16" data-title="p">go with the flow, adapt as you go.</a>
+              </div>  
+              <input type="hidden" name="v16" id="v16" value="j">
+          </div>
+          <div class="row input-group">
+              <label for="v17" class="col-1 control-label text-right">17</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v17" data-title="e">active, initiate.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v17" data-title="i">reflective, deliberate.</a>
+              </div>  
+              <input type="hidden" name="v17" id="v17" value="e">
+          </div>
+          <div class="row input-group">
+              <label for="v18" class="col-1 control-label text-right">18</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v18" data-title="s">facts, things, “what is”.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v18" data-title="n">ideas, dreams, “what could be,” philosophical.</a>
+              </div>  
+              <input type="hidden" name="v18" id="v18" value="s">
+          </div>
+          <div class="row input-group">
+              <label for="v19" class="col-1 control-label text-right">19</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v19" data-title="t">matter of fact, issue-oriented.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v19" data-title="f">sensitive, people-oriented, compassionate.</a>
+              </div>  
+              <input type="hidden" name="v19" id="v19" value="t">
+          </div>
+          <div class="row input-group">
+              <label for="v20" class="col-1 control-label text-right">20</label>
+              <div id="radioBtn" class="btn-group flex-wrap">
+                <a class="btn btn-secondary btn-sm active" data-toggle="v20" data-title="j">control, govern.</a>
+                <a class="btn btn-secondary btn-sm notActive" data-toggle="v20" data-title="p">latitude, freedom.</a>
+              </div>  
+              <input type="hidden" name="v20" id="v20" value="j">
+          </div>
+      </div>        
+          
+         <button id="submit">View results</button>
+      </div>
+  </form>
+      <div class="results">
+          <div id="waarden">
+              <p>According to the MYERS-BRIGGS Personality Test, your type is :</p>
+              <h2 id ="res"><!--Hier komt de uitslag--> </h2>
+            <h3>Values:</h3>
+                <ul> <!--Hier komen de values uit de uitslag--> 
+                  <li id = "IE"></li>
+                  <li id = "SN"></li>
+                  <li id = "TF"></li>
+                  <li id = "JP"></li>
+                </ul>
+            <h3>Description</h3> 
+            <p id ="overzicht">
+              <!--Hier komt de omschrijving van de personlijkheidstype --> 
+            </p>
+        </div>
+<!-- uitleg over deze test -->
+          <div id ="info">
+              <h3>MYERS-BRIGGS Explanation</h3>
+              <ul>
+                  <li>The original ideas of the Myers-Briggs Type Indicator (MBTI) were
+created by Carl Gustav Jung in 1921.</li>
+                  <li>The actual test was officially published in 1962. The test was created
+to help determine which careers would be best for women as they
+entered the workforce for the first time during WWII.</li>
+                  <li>It is a psychological analysis examination that determines a person’s
+psychological makeup and how they perceive and make decisions.</li>
+                  <li>The test is made of four different dichotomies or personality
+descriptions. One can either be:
+                      <ol>
+                          <li>Introverted or Extroverted</li>
+                          <li>Sensing or Intuitive</li>
+                          <li>Thinking or Feeling</li>
+                          <li>Judging or Perceptive</li>
+                      </ol>
+                  </li>
+              </ul>
+          </div>
+          
+<footer>
+  <center>
+     <p> By Kasuni & Kaveen </p>
+  </center>
+</footer>
+   
+</body>
+</html>
+<!-- partial -->
+  <script  src="./personality.js"></script>
+
+</body>
+</html>

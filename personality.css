@@ -1,0 +1,60 @@
+body{
+  font-size:18px;
+}
+.container {
+      background: url("https://images.unsplash.com/photo-1533020897307-5f057b2370ae?ixlib=rb-0.3.5&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ&s=b642a180fb767bd86ebf1d5863ccb844");
+    background-repeat: no-repeat;
+    background-size: 100%;
+      display: grid;
+      grid-gap: 9px;
+      grid-template-columns: 100%;
+  color: #eee;
+  padding: 30px;
+  color: darkgray;
+}
+
+header{
+    background: #4e5965;
+    padding: 30px 55px 15px 55px;
+}
+h1, footer{
+  color: lightgray;
+  text-align: center;
+}
+#description {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 45px;
+    border-top: 7px solid slategray;
+    border-bottom:  7px solid slategray;
+    color: slategray;
+}
+.vragen, .results {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  color: slategray;  
+}
+
+#moreInfo,#refLinks{ 
+   padding: 13px; 
+   float: right;
+}
+
+li, h3{
+  text-align: left;
+}
+
+.results{
+  padding: 9px 45px;
+}
+#waarden{
+  text-align:center;
+}
+footer{
+  background-color: slategray;
+  padding: 7px;
+}
+#radioBtn .notActive{
+    color: slategray;
+    background-color: #fff;
+}

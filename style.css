@@ -1,0 +1,58 @@
+.overlay {
+  background-color: #9999ff;
+  height: 100%;
+  opacity: .9;
+  color: white;
+  display: -webkit-box;
+  display: flex;
+}
+.overlay .content {
+  height: 50%;
+  width: 31%;
+  margin: auto;
+}
+.overlay .content .heading-top {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2.6rem;
+  font-weight: bolder;
+  letter-spacing: .22rem;
+}
+.overlay .content .heading-bottom {
+  text-transform: uppercase;
+  font-size: 17.2rem;
+  font-weight: bolder;
+  opacity: 1;
+  line-height: 0.9;
+  margin-bottom: 4rem;
+}
+.overlay .content .description {
+  font-size: 1.6rem;
+}
+.overlay .content .login-now {
+  margin-top: 4rem;
+  text-transform: uppercase;
+  background: none;
+  color: white;
+  border: 2px solid white;
+  border-radius: 2.5rem;
+  width: 32.5rem;
+  letter-spacing: .6rem;
+  padding: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.container-fluid {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  padding: 0;
+  background: url(businessman-2682712_1280.jpg);
+  background-size: cover;
+  background-position: 100%;
+  text-align: center;
+}
+
+:root {
+  font-size: 62.5%;
+}
